@@ -53,8 +53,8 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
         if(v==singnup){
             tomain.putExtra("intent1fromsignup",e1.getText().toString());
             tomain.putExtra("intent2fromsignup",e2.getText().toString());
-            String edit1=e1.getText().toString();
-            String edit2=e2.getText().toString();
+            String edit1=e1.getText().toString().trim();
+            String edit2=e2.getText().toString().trim();
             LoginAndSignup.array.add(edit1+edit2);
             Toast.makeText(SignUp.this, "hello", Toast.LENGTH_SHORT).show();
             handeler.postDelayed(new Runnable() {
