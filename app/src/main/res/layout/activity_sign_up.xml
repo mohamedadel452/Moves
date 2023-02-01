@@ -49,6 +49,8 @@
                 <EditText
                     android:id="@+id/usernameinsignup"
                     android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:lines="1"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="20dp"
                     android:layout_weight="1"
@@ -64,6 +66,8 @@
                 app:passwordToggleTint="@color/black"
                 android:animateLayoutChanges="true"
                 app:errorEnabled="true"
+                android:inputType="textPassword"
+                android:lines="1"
 
                 >
 
