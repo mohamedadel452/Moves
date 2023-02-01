@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_marginTop="16dp"
+        android:id="@+id/image1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/appbar" />
+
+    <ImageView
+        android:layout_below="@+id/image1"
+        android:id="@+id/image2"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/head"
+        />
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_below="@+id/image2"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/categories"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image3"
+        android:layout_marginHorizontal="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/heros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heróis"
+            android:textColor="#F2264B"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:text="Ver tudo"
+            android:textColor="#B7B7C8"
+            android:textSize="14sp"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal" />
+</RelativeLayout>
+    </ScrollView>

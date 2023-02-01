@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovesDetails">
+
+
+   <ImageView
+       android:id="@+id/heroimage"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:scaleType="fitXY"
+       tools:src="@drawable/ic_launcher_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical">
+
+       <TextView
+        android:id="@+id/realname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:text="peter"
+           android:textSize="16dp"
+           android:textColor="@color/white"
+           android:alpha="0.7"
+        />
+
+        <TextView
+            android:id="@+id/heroname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:text="peter"
+            />
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="210dp">
+
+            <TextView
+                android:id="@+id/herobio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:text="\r\n\t\tSteven Rogers was born in the Lower East Side of Manhattan, New York City, in 1925 to poor Irish immigrants, Sarah and Joseph Rogers.[54] Joseph died when Steve was a child, and Sarah died of pneumonia while Steve was a teen. By early 1940, before America's entry into World War II, Rogers is a tall, scrawny fine arts student specializing in illustration and a comic book writer and artist.\r\n\t\t"
+                />
+
+        </ScrollView>
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

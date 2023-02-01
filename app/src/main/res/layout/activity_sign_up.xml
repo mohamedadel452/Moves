@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    tools:context=".SignUp" >
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/sign"
+        android:scaleType="centerCrop"/>
+
+
+    <LinearLayout
+        android:id="@+id/lr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+
+        <TextView
+            android:id="@+id/editTextTextPersonNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up "
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/usernameinsignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_buton"
+                    android:hint="User name"
+                    android:textColorHint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/black"
+                android:animateLayoutChanges="true"
+                app:errorEnabled="true"
+
+                >
+
+                <EditText
+                    android:id="@+id/passwordinsignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/white_buton"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/signupinsignup"
+            android:layout_width="370dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blacke_buton2"
+            android:text="Signup "
+            app:backgroundTint="@null"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
